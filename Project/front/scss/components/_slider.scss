@@ -1,0 +1,126 @@
+.slider {
+    margin-top: 40px;
+    @include small {
+       margin-top: 0;
+       margin-bottom: 56px;
+    }
+ 
+    &__inner {
+       border-radius: $border-radius;
+       background-image:  url(../img/vector/Vector-slider.svg);
+       background-position: left;
+       background-repeat: no-repeat;
+       position: relative;
+       @include large {
+          background-position: left bottom;
+       }
+       @include medium {
+          background-size: auto;
+       }
+       @include small {
+          background-image: url(../img/vector/Vector-slider.svg);
+          background-position: contain;
+       }
+ 
+       &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background-image: $gradient-color;
+          border-radius: $border-radius;
+          z-index: -1;
+       }
+ 
+       .owl-carousel .owl-item img {
+          display: inline;
+       }
+    }
+ 
+    &__bgshape {
+       position: absolute;
+       left: 0;
+       bottom: 0;
+       z-index: -1;
+    }
+ 
+    .slider-wrapper {
+       position: relative;
+    }
+ 
+    &__content {
+       padding-top: 80px;
+       padding-left: 72px;
+       padding-bottom: 142px;
+       max-width: 520px;
+       @include medium {
+          padding-top: 50px;
+          padding-left: 50px;
+          padding-bottom: 100px;
+          max-width: 450px;
+       }
+       @include small {
+          padding: 30px 30px 50px;
+          max-width: none;
+       }
+       
+       &-title {
+          font-weight: $fw-bold;
+          color: $white;
+          font-size: 48px;
+          line-height: 150%;
+          @include medium {
+             font-size: 40px;
+          }
+          @include small {
+             font-size: 35px;
+          }
+          @include xsmall {
+             font-size: 28px;
+             line-height: 40px;
+          } 
+       }
+ 
+       &-text {
+          margin-top: 24px;
+          margin-bottom: 58px;
+          line-height: 28px;
+          color: $white;
+          @include small {
+             margin-bottom: 0;
+          }
+          @include xsmall {
+             display: none;
+          }
+       }
+ 
+       .btn {
+          min-width: 200px;
+          @include inline-flex;
+          color: $black;
+       }
+    }
+ 
+    &__image {
+       position: absolute;
+       right: 0;
+       bottom: 0;
+       width: auto !important;
+       border-top-right-radius: $border-radius;
+       border-bottom-right-radius: $border-radius;
+       @include large {
+          max-width: 500px;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+       }
+       @include medium {
+          width: 350px;
+          max-width: 350px;
+       }
+       @include small {
+          position: static;
+       }
+    }
+ }

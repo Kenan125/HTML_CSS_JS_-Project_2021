@@ -1,0 +1,117 @@
+.calculator {
+    padding: 64px 105px 48px;
+    @include medium {
+       padding: 50px;
+    }
+    @include small {
+       padding: 30px;
+    }
+ 
+    &__content {
+       :is(h6, p) {
+          line-height: 24px;
+       }
+    }
+ 
+    .heading {
+       margin-bottom: 48px;
+    }
+ 
+    h6 {
+       margin-bottom: 8px;
+       text-transform: capitalize;
+    }
+ 
+    .nice-select {
+       padding-left: 16px;
+       padding-right: 56px;
+       color: $white;
+       width: 96px;
+       @include xsmall {
+          padding-right: 8px;
+          padding-left: 8px;
+          width: 50px;
+       }
+ 
+       .list{
+          margin-top: 12px;
+          padding: 0;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+ 
+          .option {
+             @include xsmall {
+                padding: 6px;
+             }
+          }
+       }
+    }
+ 
+    .tabs {
+       @include medium {
+          margin-bottom: 48px;
+       }
+       @include xsmall {
+          margin-bottom: 24px;
+       }
+    }
+ 
+    /* ADJACENT TABS */
+ .tabs-adjacent {
+    border: 1px solid $line-color!important;
+    border-radius: $border-radius;
+    @include flex;
+    @include small {
+       overflow-x: auto;
+    }
+ 
+    .btn:not(:first-child) {
+       @include medium {
+          margin-left: 0 !important;
+       }
+    }
+ 
+    .btn--adjacent-tab {
+       border: none !important;
+    }
+ }
+ 
+    .btn--primary {
+       margin: 56px auto 0;
+       min-width: 320px;
+       @include small {
+          min-width: 100%;
+       }
+       @include xsmall {
+          margin-top: 40px;
+       }
+    }
+ 
+    .total-amount {
+       text-align: center;
+       margin-top: 64px;
+       @include xsmall {
+          margin-top: 32px;
+       }
+ 
+       &__dollar {
+          font-weight: $fw-semibold;
+          color: $white;
+          font-size: 64px;
+          line-height: 80px;
+          @include xsmall {
+             font-size: 40px;
+             line-height: 56px;
+          }
+       }
+ 
+       &__manat {
+          font-size: 32px;
+          line-height: 40px;
+          @include xsmall {
+             font-size: 24px;
+             line-height: 32px;
+          }
+       }
+    }
+ }

@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width">
+   <title>Document</title>
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/select2.min.css" rel="stylesheet">
+   <link href="front/css/style.css" rel="stylesheet">
+</head>
+
+<body class="">
+
+
+
+
+   <header class="header  header-b-72">
+      <div class="header__top">
+         <div class="container">
+            <div class="header__top-inner">
+               <div class="d-flex align-items-center">
+                  <a  class="header__top-link">
+                     <span>Daşınmasına icazə yoxdur</span>
+                  </a>
+                  <a href="faq.html" class="header__top-link">
+                     <span>Tez-tez verilən suallar</span>
+                  </a>
+               </div>
+               <div class="header__top-right">
+                  <div class="currency-top">
+                     <span class="citem-1"> 1 TRY - 0.20 AZN </span>
+                     <span class="citem-2"> 1 USD - 1.70 AZN </span>
+                  </div>
+                  <a href="tel:+994123108707">
+                     <i class="icon-phone_two_tone"><span class="path1"></span><span class="path2"></span><span
+                           class="path3"></span></i>
+                     <span>+994123108707</span>
+                  </a>
+                  <div class="select-lang">
+                     <select aria-label="Default select example" class="js-niceselect redirect-select">
+                        <option value="/az/faq.html" selected>AZE</option>
+                        <option value="/en/faq.html">ENG</option>
+                        <option value="/ru/faq.html">RUS</option>
+                     </select>
+                  </div>
+                  <a href="az/signup.html" class="btn btn--primary header-register-btn" title="">Qeydiyyat</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="header__bottom">
+            <nav class="navbar navbar-expand-lg ">
+               <a href="index.html" class="logo order-3 d-none d-sm-block"><img src="front/img/logo/logo.svg" alt="Logo"
+                     class="d-block"></a>
+               <a href="index.html" class="logo order-3 d-sm-none"><img src="front/img/logo/logo-sm.svg" alt="Logo"
+                     class="d-block"></a>
+               <div>
+                  <button class="navbar-toggler order-1" type="button" aria-expanded="false"
+                     aria-label="Toggle navigation">
+                     <div class="toggler-btn">
+                        <div class="bar bar1"></div>
+                        <div class="bar bar2"></div>
+                        <div class="bar bar3"></div>
+                     </div>
+                  </button>
+                  <i class="icon-cart d-md-none order-2"><span class="path1"></span><span class="path2"></span><span
+                        class="path3"></span><span class="path4"></span></i>
+               </div>
+               <a href="az/signin.html"><i class="icon-user_two_tone d-md-none order-last"><span
+                        class="path1"></span><span class="path2"></span><span class="path3"></span><span
+                        class="path4"></span></i></a>
+               <div class="side-menu order-last">
+                  <div class="side-menu__head d-lg-none">
+                     <a href="index.html" class="logo  order-3 d-lg-none"><img src="front/img/logo/logo-sm.svg"
+                           alt="Logo"></a>
+                     <i class="icon-close_two_tone close-icon" id="closeIcon"></i>
+                  </div>
+                  <ul class="navbar-nav">
+                     <li class="nav-item">
+                        <a class="nav-link" href="about.html">HAQQIMIZDA</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="tariff.html">TARİFLƏR</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="services.html">XİDMƏTLƏR</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="store.html">MAĞAZALAR</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="news.html">YENİLİKLƏR</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="contact.html">ƏLAQƏ</a>
+                     </li>
+                  </ul>
+                  <div class="side-menu__footer d-lg-none">
+                     <div>
+                        <a href="az/faq.html" class="btn btn--side-menu">AZE</a>
+                        <a href="en/faq.html" class="btn btn--side-menu">ENG</a>
+                        <a href="ru/faq.html" class="btn btn--side-menu">RUS</a>
+                     </div>
+                     <button class="btn btn--side-menu d-flex align-items-center">
+                        <i class="icon-phone_two_tone"><span class="path1"></span><span class="path2"></span><span
+                              class="path3"></span></i>
+                        <span>+994123108707</span>
+                     </button>
+                  </div>
+               </div>
+            </nav>
+
+            <!-- Header icons  -->
+            <div class="d-none d-md-flex">
+               <a href="az/signin.html" class="header__icon">
+                  <i class="icon-user_two_tone"><span class="path1"></span><span class="path2"></span><span
+                        class="path3"></span><span class="path4"></span></i>
+                  <span class="d-none d-xl-block">Hesabım</span>
+               </a>
+               <a href="#" class="header__icon header__icon--cart">
+                  <i class="icon-cart"><span class="path1"></span><span class="path2"></span><span
+                        class="path3"></span><span class="path4"></span></i>
+                  <span class="cart-count">0</span>
+               </a>
+            </div>
+         </div>
+      </div>
+   </header>
+   <section class="faq vlct-section">
+      <div class="heading heading--center heading--line">
+         <h2 class="heading__title">Tez-tez verilən suallar</h2>
+         <p class="heading__text">Sifariş zamanı sizi ən çox maraqlandıran sualları cavabladıq.</p>
+      </div>
+      <div class="container-pages">
+         <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="heading108">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse108"
+                     aria-expanded="true" aria-controls="collapse108">
+                     <h6>Necə işləyir?</h6>
+                     <i class="icon-menu-down_two_tone"></i>
+                  </button>
+               </h2>
+
+               <div id="collapse108" class="accordion-collapse collapse " aria-labelledby="heading108"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     <div class="accordion-body__header">
+                        <h6 class="text-font">Necə işləyir?</h6>
+                        <i class="icon-menu-up_two_tone"></i>
+                     </div>
+                     <p><br />
+                        <strong>Velocity.az - da qeydiyyatdan ke&ccedil;in</strong>
+                     </p>
+
+                     <p>Qeydiyyatdan ke&ccedil;məklə T&uuml;rkiyə və Amerikada&nbsp;&nbsp;xarici &uuml;nvana sahib
+                        olacaqsınız və hesabınızda &uuml;nvanlar qeyd olunacaq.</p>
+
+                     <p>&nbsp;</p>
+
+                     <p><strong>Sifarişi &uuml;nvana g&ouml;ndərin</strong></p>
+
+                     <p>Onlayn mağazalardan alış-veriş edərkən bağlamanızın &ccedil;atdırılacağı &uuml;nvan hissəsinə
+                        saytımızda qeyd edilən &uuml;nvanı yazın və &ouml;dəniş edib sifarişinizi tamamlayın.</p>
+
+                     <p>&nbsp;</p>
+
+                     <p><strong>Bağlamanızı təhvil alın</strong></p>
+
+                     <p>Anbarımıza təhvil verilmiş məhsulu T&uuml;rkiyədən1-5 iş g&uuml;n&uuml; Amerikadan 3-10 iş
+                        g&uuml;n&uuml;&nbsp;&nbsp;ərzində Azərbaycana &ccedil;atdırırıq.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="heading97">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse97"
+                     aria-expanded="true" aria-controls="collapse97">
+                     <h6>Bizim üstünlüklərimiz</h6>
+                     <i class="icon-menu-down_two_tone"></i>
+                  </button>
+               </h2>
+
+               <div id="collapse97" class="accordion-collapse collapse " aria-labelledby="heading97"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     <div class="accordion-body__header">
+                        <h6 class="text-font">Bizim üstünlüklərimiz</h6>
+                        <i class="icon-menu-up_two_tone"></i>
+                     </div>
+                     <p><br />
+                        <br />
+                        <span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Velocity
+                              şirkəti bağlamaların po&ccedil;t ilə Azərbaycanda istənilən &uuml;nvana
+                              &ccedil;atdırılmasını həyata ke&ccedil;irir.</span></span>
+                     </p>
+
+                     <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">&quot;Mənim
+                              &uuml;&ccedil;&uuml;n Sifariş Et&quot; xidməti.<br />
+                              Daşınılan b&uuml;t&uuml;n bağlamaların &ouml;dənişsiz olaraq sığortalanması.<br />
+                              T&uuml;rkiyədə qapıda &ouml;dəmə (&quot;Kapıda &ouml;dəmə&quot;) xidməti.<br />
+                              &Ouml;dənişsiz kuryer xidməti.<br />
+                              Minimal &ccedil;atdırılma tarifləri $1-dan başlayan qiymətlər.<br />
+                              S&uuml;rətli &ccedil;atdırılma xidməti.<br />
+                              Ofisin şəhər mərkəzində və əlverişli &uuml;nvanda yerləşməsi.<br />
+                              Operativ m&uuml;ştəri xidmətləri.</span></span></p>
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="heading98">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse98"
+                     aria-expanded="true" aria-controls="collapse98">
+                     <h6>Çatdırılma haqqı necə hesablanır?</h6>
+                     <i class="icon-menu-down_two_tone"></i>
+                  </button>
+               </h2>
+
+               <div id="collapse98" class="accordion-collapse collapse " aria-labelledby="heading98"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     <div class="accordion-body__header">
+                        <h6 class="text-font">Çatdırılma haqqı necə hesablanır?</h6>
+                        <i class="icon-menu-up_two_tone"></i>
+                     </div>
+                     <div><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Beynəlxalq
+                              Hava Nəqliyyatı Assosiasiyasının metrik standartlarına uyğun olaraq daşınan y&uuml;klərin
+                              &ccedil;əkisi bağlamaların &ouml;l&ccedil;&uuml;lərindən asılı olaraq iki c&uuml;r
+                              hesablana bilər:</span></span></div>
+
+                     <div><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px"><strong>1.
+                                 Fiziki &ccedil;əki&nbsp;</strong></span></span></div>
+
+                     <div><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px"><strong>2.
+                                 Həcm &ccedil;əkisi&nbsp;</strong></span></span></div>
+
+                     <div><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Hər iki
+                              g&ouml;stərici hesablanır hansı daha &ccedil;ox olarsa, daşınma haqqı o &ccedil;əki
+                              əsasında hesablanır.</span></span></div>
+
+                     <div><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Hər hansı
+                              bir uzunluq g&ouml;sətiricisi 1 m&nbsp;artıq olan bağlamaların daşınma haqqı həm həcm
+                              &ccedil;əkisi, həm də fiziki &ccedil;əkisi hesablanacaq, hansı &ccedil;əki
+                              g&ouml;stəricisi daha &ccedil;ox olarsa, daşınma haqqı o &ccedil;əki əsasında
+                              hesablanacaqdır.</span></span></div>
+
+                     <div><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Hesablanma
+                              qaydasını nəzərinizə &ccedil;atdırırq.</span></span></div>
+
+                     <div><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px"><strong>En
+                                 (sm) x Uzunluq (sm) x H&uuml;nd&uuml;rl&uuml;k (sm)/6000 = Həcm &ccedil;əkisi
+                                 (kq)</strong></span></span></div>
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="heading106">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse106"
+                     aria-expanded="true" aria-controls="collapse106">
+                     <h6>Sifarişim neçə gün ərzində çatdırılır?</h6>
+                     <i class="icon-menu-down_two_tone"></i>
+                  </button>
+               </h2>
+
+               <div id="collapse106" class="accordion-collapse collapse " aria-labelledby="heading106"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     <div class="accordion-body__header">
+                        <h6 class="text-font">Sifarişim neçə gün ərzində çatdırılır?</h6>
+                        <i class="icon-menu-up_two_tone"></i>
+                     </div>
+                     <p><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Bağlamaların
+                              &ccedil;atdırılma m&uuml;ddəti məhsul xarici anbarımıza daxil olduğu vaxtdan hesablanır.
+                              T&uuml;rkiyədən y&uuml;klərin g&ouml;ndərişi həftədə 2 dəfə Amerikadan həftədə 1
+                              dəfə&nbsp; həyata ke&ccedil;irilir. Bağlamanız anbarımıza daxil olduqdan sonra
+                              T&uuml;rkiyədən 1-&nbsp;5&nbsp;iş g&uuml;n&uuml; Amerikadan 3-7&nbsp;iş
+                              g&uuml;n&uuml;&nbsp;ərzində Azərbaycana &ccedil;atdırılır.</span></span></p>
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="heading105">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse105"
+                     aria-expanded="true" aria-controls="collapse105">
+                     <h6>Bəyənnamə nədir? Necə doldurulur?</h6>
+                     <i class="icon-menu-down_two_tone"></i>
+                  </button>
+               </h2>
+
+               <div id="collapse105" class="accordion-collapse collapse " aria-labelledby="heading105"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     <div class="accordion-body__header">
+                        <h6 class="text-font">Bəyənnamə nədir? Necə doldurulur?</h6>
+                        <i class="icon-menu-up_two_tone"></i>
+                     </div>
+                     <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Gecikmələrin
+                              yaranmaması və bağlama hesabında əks olunması &uuml;&ccedil;&uuml;n m&uuml;ştəri şəxsi
+                              hesabına daxil olaraq, sifarişi haqqında məlumatı əvvəlcədən bəyan etməlidir. Bəyənnamə -
+                              m&uuml;ştərinin sifariş etdiyi bağlama haqqında y&uuml;k xarici anbara daxil olmazdan
+                              <strong>ƏVVƏL</strong>&nbsp;Velocity.az şəxsi hesabında&nbsp; &ldquo;BƏYAN&nbsp; ET&rdquo;
+                              b&ouml;lməsində məlumat verməsidir. Sifariş haqqında məlumat bağlama xarici anbarlara
+                              &ccedil;atdırılmamışdan&nbsp;&nbsp;əvvəl qeyd olunmalıdır. Y&uuml;k&uuml;n bəyan edilməsi
+                              yalnız bağlama satıcı tərəfindən kuryerə verildikdən və izləmə n&ouml;mrəsi (Tracking
+                              number,Teslimat no,G&ouml;nderi numarası, Kargo takip numarası, Barkod no, MNG kargoda
+                              Fatura No) təqdim edildikdən sonra m&uuml;mk&uuml;nd&uuml;r. Bağlama &ldquo;sipariş
+                              numarası&rdquo; ilə bəyan oluna bilməz. Bəyənnamədə bağlamanın izləmə n&ouml;mrəsi( izləmə
+                              n&ouml;mrəsi b&ouml;lməsinə bu n&ouml;mrələrdən birini yazmaq olar: &ldquo;Tracking
+                              number&rdquo;, &quot;Teslimat no&quot;, &ldquo;G&ouml;nderi numarası&rdquo;, Kargo takip
+                              numarası, Barkod no)&nbsp; mağaza adı, məhsulun kategoriyası qeyd edilir və satıcı
+                              tərəfindən təqdim edilmiş invoys sənədi (fatura) əlavə edilir.</span></span></p>
+
+                     <p><span style="font-family:arial,helvetica,sans-serif"><span
+                              style="font-size:16px"><strong>İstisnalar:</strong></span></span></p>
+
+                     <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Nadir hallarda
+                              satıcılar m&uuml;ştərinin bağlamasını&nbsp;izləmə n&ouml;mrəsi (tracking number) təyin
+                              etmədən g&ouml;ndərir. Bu halda yalnız bağlama anbara daxil olduqdan sonra bəyannamə
+                              doldurulmalıdır.</span></span></p>
+
+                     <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Məlumatların
+                              d&uuml;zg&uuml;n qeyd edilməsi bağlamanın vaxtında &ccedil;atdırılmasının ilkin
+                              şərtidir.</span></span></p>
+
+                     <p><span style="font-family:arial,helvetica,sans-serif"><span
+                              style="font-size:16px"><strong>Bağlamanın d&uuml;zg&uuml;n bəyan olunması qaydası ilə və
+                                 bəyannamə ilə bağlı b&uuml;t&uuml;n suallarınıza video təlimatda cavab tapa
+                                 bilərsiniz.</strong><br />
+                              https://youtu.be/Grh5fu9mnw0</span></span></p>
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="heading126">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse126"
+                     aria-expanded="true" aria-controls="collapse126">
+                     <h6>Smart Customs tətbiqinin üstünlükləri.</h6>
+                     <i class="icon-menu-down_two_tone"></i>
+                  </button>
+               </h2>
+
+               <div id="collapse126" class="accordion-collapse collapse " aria-labelledby="heading126"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     <div class="accordion-body__header">
+                        <h6 class="text-font">Smart Customs tətbiqinin üstünlükləri.</h6>
+                        <i class="icon-menu-up_two_tone"></i>
+                     </div>
+                     <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">H&ouml;rmətli
+                              m&uuml;ştərilər, son d&ouml;vrlərdə xaricdən onlayn sifariş edənlərin sayının xeyli
+                              artmasını nəzərə alaraq &quot;Smart Customs&quot; tətbiqində və ya e.customs.gov.az
+                              portalında&nbsp; bəyan etdikdə 300 dollar limitini ke&ccedil;ən hissəsinin vergisini
+                              &ouml;dəyərək saxlanc haqqı olmadan, g&ouml;mr&uuml;k orqanlarına getmədən və ya broker
+                              xidmətindən istifadə etmədən bağlamalarınızı əldə etmək imkanına sahib olursunuz.Bunun
+                              &uuml;&ccedil;&uuml;n sadəcə g&ouml;ndərilən b&uuml;t&uuml;n bağlamalarınızı &quot;Smart
+                              Customs&quot; -da bəyan&nbsp; edərkən qeyd olunan vergi &ouml;dənişini edirsiniz və bizə
+                              məlumat verirsiniz.M&uuml;ştərilər eyni zamanda &nbsp;bağlamaların g&ouml;mr&uuml;k
+                              anbarından saxlanc haqqından da (İlk g&uuml;n &uuml;&ccedil;&uuml;n 15 AZN,&nbsp; sonraki
+                              hər g&uuml;n &uuml;&ccedil;&uuml;n 2 AZN) azad edilirlər.</span></span></p>
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="heading102">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse102"
+                     aria-expanded="true" aria-controls="collapse102">
+                     <h6>300 dollar limiti nədir?</h6>
+                     <i class="icon-menu-down_two_tone"></i>
+                  </button>
+               </h2>
+
+               <div id="collapse102" class="accordion-collapse collapse " aria-labelledby="heading102"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     <div class="accordion-body__header">
+                        <h6 class="text-font">300 dollar limiti nədir?</h6>
+                        <i class="icon-menu-up_two_tone"></i>
+                     </div>
+                     <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Azərbaycan
+                              Respublikasının qanunvericiliyinə əsasən 21 sentyabr 2020-ci il tarixindən etibarən fiziki
+                              şəxslər hər təqvim ayı ərzində ölkəyə &uuml;mumi dəyəri 300 ABŞ dolları ekvivalentindən
+                              artıq olmayan yük idxal edə bilər.(mehsul dəyəri+ &ccedil;atdırılma haqqı)<br />
+                              &Uuml;mumi dəyəri 300 ABŞ dollarından çox olduqda qanunvericiliyə uyğun olaraq gömrük
+                              rüsumu ödənilir.&nbsp;<br />
+                              300 ABŞ dolları limitinə əşyanın öz dəyəri və saxlanılan bağlamanın daşınma haqqı
+                              daxildir.<br />
+                              Bağlama təyin olunmuş limitin aşıldığı halda yalnız limiti ke&ccedil;miş hissə
+                              &uuml;&ccedil;&uuml;n g&ouml;mr&uuml;k r&uuml;sumu hesablanacaqdır.<br />
+                              Bağlamanın BCT-də saxlanması zamanı ilk g&uuml;n 15 AZN, sonrakı hər g&uuml;n
+                              &uuml;&ccedil;&uuml;n 2 AZN (1 avro) saxlanma haqqı hesablanır.<br />
+                              Xahiş edirik, sifariş verərkən diqqətli olun!</span></span></p>
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="heading99">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse99"
+                     aria-expanded="true" aria-controls="collapse99">
+                     <h6>Bağlamanın daşınma haqqının ödəmə üsulları</h6>
+                     <i class="icon-menu-down_two_tone"></i>
+                  </button>
+               </h2>
+
+               <div id="collapse99" class="accordion-collapse collapse " aria-labelledby="heading99"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     <div class="accordion-body__header">
+                        <h6 class="text-font">Bağlamanın daşınma haqqının ödəmə üsulları</h6>
+                        <i class="icon-menu-up_two_tone"></i>
+                     </div>
+                     <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Bağlamaların
+                              daşınma haqqı m&uuml;ştərinin istəyinə g&ouml;rə Velocity.az saytından onlayn, ofisdə nağd
+                              və ya POS-terminal&nbsp;vasitəsi ilə həyata ke&ccedil;irilə bilər.</span></span></p>
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="heading125">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse125"
+                     aria-expanded="true" aria-controls="collapse125">
+                     <h6>Başqa bir şəxs Sizin bağlamanı necə təhvil ala bilər?</h6>
+                     <i class="icon-menu-down_two_tone"></i>
+                  </button>
+               </h2>
+
+               <div id="collapse125" class="accordion-collapse collapse " aria-labelledby="heading125"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     <div class="accordion-body__header">
+                        <h6 class="text-font">Başqa bir şəxs Sizin bağlamanı necə təhvil ala bilər?</h6>
+                        <i class="icon-menu-up_two_tone"></i>
+                     </div>
+                     <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Bakı ofisində
+                              olan bağlamalarınızı başqa bir şəxsin,&nbsp;Sizin adınıza bağlamanı təhvil alması
+                              &uuml;&ccedil;&uuml;n etibarnamə verə bilərsiniz. Bunun &uuml;&ccedil;&uuml;n Siz
+                              saytımızda hesabınıza daxil olub, şəxsi hesabda <strong>&quot;Etibarnamələr&quot;
+                              </strong>b&ouml;lməsindən bağlamanı təhvil almasını istədiyiniz şəxsin şəxsiyyət
+                              vəsiqəsində olan məlumatları daxil edib, ona etibarnamə verə bilərsiniz. Etibarnamə
+                              verdiyiniz şəxs Sizin m&uuml;ştəri kodu və &ouml;z şəxsiyyət vəsiqəsi ilə yaxınlaşıb,
+                              bağlamanı təhvil ala bilər. Siz istənilən qədər etibarnamə əlavə edə
+                              bilərsiniz.</span></span></p>
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="heading100">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse100"
+                     aria-expanded="true" aria-controls="collapse100">
+                     <h6>Daşınılmasına icazə yoxdur.</h6>
+                     <i class="icon-menu-down_two_tone"></i>
+                  </button>
+               </h2>
+
+               <div id="collapse100" class="accordion-collapse collapse " aria-labelledby="heading100"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     <div class="accordion-body__header">
+                        <h6 class="text-font">Daşınılmasına icazə yoxdur.</h6>
+                        <i class="icon-menu-up_two_tone"></i>
+                     </div>
+                     <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Daşınması
+                              qadağan olan məhsullar:</span></span></p>
+
+                     <ul style="list-style-type:square">
+                        <li>
+                           <p><span style="font-family:arial,helvetica,sans-serif"><span
+                                    style="font-size:16px">Dezodorantlar.</span></span></p>
+                        </li>
+                        <li>
+                           <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Mobil
+                                    telefonlar.</span></span></p>
+                        </li>
+                        <li>
+                           <p><span style="font-family:arial,helvetica,sans-serif"><span
+                                    style="font-size:16px">M&uuml;xtəlif n&ouml;v batareyalar,
+                                    powerbank-lar.</span></span></p>
+                        </li>
+                        <li>
+                           <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Qida
+                                    məhsulları</span></span></p>
+                        </li>
+                        <li>
+                           <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Hər
+                                    c&uuml;r silah n&ouml;vləri, d&ouml;y&uuml;ş sursatı, hərbi təyinatlı hər c&uuml;r
+                                    əşyalar, partlayıcı maddələr, hərbi texnika.</span></span></p>
+                        </li>
+                        <li>
+                           <p><span style="font-family:arial,helvetica,sans-serif"><span
+                                    style="font-size:16px">Partlayıcı, tezalışan və ya digər təhl&uuml;kəli maddələr,
+                                    eləcə də radioaktiv maddələr və onların hazırlanması texnologiyasına aid
+                                    materiallar.</span></span></p>
+                        </li>
+                        <li>
+                           <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Narkotik
+                                    və psixotrop maddələr, onlardan istifadə &uuml;&ccedil;&uuml;n ləvazimat,
+                                    həm&ccedil;inin hazırlanması texnologiyasına aid materiallar.</span></span></p>
+                        </li>
+                        <li>
+                           <p><span style="font-family:arial,helvetica,sans-serif"><span
+                                    style="font-size:16px">Pornoqrafik əşyalar, əxlaq pozğunluğunu, zorakılığını,
+                                    terrorizmi təbliğ və reklam edən materiallar.</span></span></p>
+                        </li>
+                        <li>
+                           <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Canlı
+                                    heyvanlar.</span></span></p>
+                        </li>
+                        <li>
+                           <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Bitki və
+                                    toxumlar.</span></span></p>
+                        </li>
+                        <li>
+                           <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Gizli
+                                    kameralar, x&uuml;susi məxfi rabitə vasitələri, onların şifrələri və istismarı
+                                    haqqında ədəbiyyat.</span></span></p>
+                        </li>
+                        <li>
+                           <p><span style="font-family:arial,helvetica,sans-serif"><span
+                                    style="font-size:16px">M&uuml;dafiə, Milli Təhl&uuml;kəsizlik və Daxili İşlər
+                                    Nazirliklərinin operativ istintaq fəaliyyəti &uuml;zrə informasiya sistemləri,
+                                    sənədləri və arxivləri.</span></span></p>
+                        </li>
+                        <li>
+                           <p><span style="font-family:arial,helvetica,sans-serif"><span
+                                    style="font-size:16px">D&ouml;vlət əhəmiyyətli sənədlər, ixtiralar,
+                                    layihələr.</span></span></p>
+                        </li>
+                        <li>
+                           <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Zinyət
+                                    əşyaları, qiymətli metallar və qiymətli daşlar.</span></span></p>
+                        </li>
+                        <li>
+                           <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Pul
+                                    əskinasları, sikkələr.</span></span></p>
+                        </li>
+                        <li>
+                           <p><span style="font-family:arial,helvetica,sans-serif"><span
+                                    style="font-size:16px">Akkumulyatorlar.</span></span></p>
+                        </li>
+                        <li>
+                           <p><span style="font-family:arial,helvetica,sans-serif"><span
+                                    style="font-size:16px">Batareyalar.</span></span></p>
+                        </li>
+                        <li>
+                           <p><span style="font-family:arial,helvetica,sans-serif"><span
+                                    style="font-size:16px">M&uuml;hərriklər.</span></span></p>
+                        </li>
+                        <li>
+                           <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Hover
+                                    Board skuterlər.</span></span></p>
+                        </li>
+                        <li>
+                           <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Maşın
+                                    yağları və maşın yağının olduğu b&uuml;t&uuml;n mallar.</span></span></p>
+                        </li>
+                        <li>
+                           <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Hava
+                                    nəqliyyatı vasitəsi ilə daşınması qadağan olunan əşyalar.</span></span></p>
+                        </li>
+                        <li>
+                           <p><span style="font-family:arial,helvetica,sans-serif"><span
+                                    style="font-size:16px">Azərbaycan Respublikasının ərazisinə idxalı qadağan olunan
+                                    əşyalar.</span></span></p>
+                        </li>
+                        <li>
+                           <p><span style="font-family:arial,helvetica,sans-serif"><span
+                                    style="font-size:16px">T&uuml;rkiyədən litium batareyalar və batareyalara sahib
+                                    texnikalar.</span></span></p>
+                        </li>
+                        <li>
+                           <p><span style="font-family:arial,helvetica,sans-serif"><span
+                                    style="font-size:16px">T&uuml;rkiyədən sənət əsərləri, m&uuml;xtəlif
+                                    &nbsp;sənədlər.</span></span></p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="heading117">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse117"
+                     aria-expanded="true" aria-controls="collapse117">
+                     <h6>"Sifariş Et" nədir?</h6>
+                     <i class="icon-menu-down_two_tone"></i>
+                  </button>
+               </h2>
+
+               <div id="collapse117" class="accordion-collapse collapse " aria-labelledby="heading117"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     <div class="accordion-body__header">
+                        <h6 class="text-font">"Sifariş Et" nədir?</h6>
+                        <i class="icon-menu-up_two_tone"></i>
+                     </div>
+                     <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Bu,
+                              T&uuml;rkiyədən istənilən məhsulun alınmasına xidmət edən kompleks servis&nbsp;xidmətidir.
+                              Bu tip sifariş zamanı biz sizin adınızdan T&uuml;rkiyə internet-mağazasından&nbsp;sifariş
+                              edirik.&nbsp; Satıcı ilə b&uuml;t&uuml;n m&uuml;vafiq tədbir və danışıqları aparırıq. Bu
+                              halda bizim&nbsp;komissiyamız &uuml;mumi məhsulun dəyərinin 5% təşkil edəcək, Azərbaycana
+                              daşınma&nbsp;xidmət haqqı bu məbləğə daxil deyil.</span></span></p>
+
+                     <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Xidmətimizdən
+                              istifadə ilə bağlı tam məlumatı bu linkdən əldə edə bilərsiniz:</span></span></p>
+
+                     <p><span style="font-family:arial,helvetica,sans-serif"><span
+                              style="font-size:16px">https://youtu.be/ANRNGXNbSds</span></span></p>
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="heading127">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse127"
+                     aria-expanded="true" aria-controls="collapse127">
+                     <h6>Bank ödənişləri necə qaytarılır?</h6>
+                     <i class="icon-menu-down_two_tone"></i>
+                  </button>
+               </h2>
+
+               <div id="collapse127" class="accordion-collapse collapse " aria-labelledby="heading127"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     <div class="accordion-body__header">
+                        <h6 class="text-font">Bank ödənişləri necə qaytarılır?</h6>
+                        <i class="icon-menu-up_two_tone"></i>
+                     </div>
+                     <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Əgər sizin
+                              sifarişinizin yerinə yetirilməsi zamanı hər hansı problem yaranırsa ( məhsul stokda
+                              t&uuml;kənə bilər və s) həmin vaxt &ouml;dədiyiniz məbləğ&nbsp;sizə geri qaytarılır. Qeyd
+                              5 % bank komissiyası qaytarılmır. &Ouml;dənişin kart hesabınıza geri qayıtması, 5-15
+                              g&uuml;n &nbsp;bəzi bankların iş sistemindən asılı olaraq daha &ccedil;ox vaxt tələb edə
+                              bilər.</span></span></p>
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="heading103">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse103"
+                     aria-expanded="true" aria-controls="collapse103">
+                     <h6>İzləmə nömrəsi ( "Tracking number") nədir?</h6>
+                     <i class="icon-menu-down_two_tone"></i>
+                  </button>
+               </h2>
+
+               <div id="collapse103" class="accordion-collapse collapse " aria-labelledby="heading103"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     <div class="accordion-body__header">
+                        <h6 class="text-font">İzləmə nömrəsi ( "Tracking number") nədir?</h6>
+                        <i class="icon-menu-up_two_tone"></i>
+                     </div>
+                     <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Bağlama onlayn
+                              mağazada tam qablaşdırıldıqdan sonra alıcıya &ccedil;atdırılması &uuml;&ccedil;&uuml;n
+                              &ouml;lkə daxili kuryerlərə verilir. Kuryer xidməti &ouml;z n&ouml;vbəsində bağlamaya
+                              Tracking number ( İzləmə n&ouml;mrəsi ) təyin edir.<br />
+                              Bu n&ouml;mrələr bağlamaların bəyan olunması &uuml;&ccedil;&uuml;n lazımdır. Bu
+                              n&ouml;mrələr &ouml;lkə daxili kuryerlərdən fərqli olaraq fərqli adlandırılır. Bağlamanı
+                              izləmək &uuml;&ccedil;&uuml;n&nbsp; UPS karqo &ldquo;Tracking number&rdquo;, Trendyol
+                              express &ldquo;G&ouml;nderi numarası&rdquo;, Yurti&ccedil;i karqo &ldquo;G&ouml;nderi
+                              kodu&rdquo;, Aras karqoda &ldquo;Kargo takip numarası&rdquo;, Trendyol express
+                              &ldquo;Teslimat no&rdquo;, PTT Kargo &ldquo;barkod no&rdquo;, MNG karqo &ldquo;Fatura
+                              no&rdquo;, S&uuml;rat Kargo &ldquo;seri numarası&rdquo; və s. təqdim edir.<br />
+                              Tracking number (izləmə n&ouml;mrəsi) bağlamanın kuryerin anbarından təyinat məntəqəsinə
+                              &ccedil;atdırılanadək m&ouml;vqeyini izləməyə imkan yaradır.<br />
+                              İzləmə n&ouml;mrəsi (Tracking number) hər bağlama &uuml;&ccedil;&uuml;n ayrı-ayrılıqda
+                              verilir, fərqli olur və təkrarlanmır.&nbsp;<br />
+                              Bağlamanız daşıyıcı şirkətin anbarına &ccedil;atdırılanadək y&uuml;k&uuml;n m&ouml;vqeyini
+                              daxili kuryer xidmətinin səhifəsində izləyə bilərsiniz.</span></span></p>
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="heading122">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse122"
+                     aria-expanded="true" aria-controls="collapse122">
+                     <h6>Onlayn kuryer sifarişi</h6>
+                     <i class="icon-menu-down_two_tone"></i>
+                  </button>
+               </h2>
+
+               <div id="collapse122" class="accordion-collapse collapse " aria-labelledby="heading122"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     <div class="accordion-body__header">
+                        <h6 class="text-font">Onlayn kuryer sifarişi</h6>
+                        <i class="icon-menu-up_two_tone"></i>
+                     </div>
+                     <p dir="ltr"><span style="font-family:arial,helvetica,sans-serif"><span
+                              style="font-size:16px"><span style="background-color:transparent">&ldquo;Onlayn
+                                 kuryer&rdquo; xidməti vasitəsilə Bakı anbarımıza daxil olan bağlamaların birbaşa&nbsp;
+                                 &uuml;nvanınıza &ccedil;atdırılmasını həyata ke&ccedil;iririk. </span>Ofisə gəlmədən
+                              onlayn kuryer sifarişi ilə rahatlıqla bağlamalarınızı əldə edin.⁣⁣</span></span></p>
+
+                     <p dir="ltr"><span style="font-family:arial,helvetica,sans-serif"><span
+                              style="font-size:16px"><span style="background-color:transparent">Kuryer sifarişini
+                                 Velocity.az saytına daxil olaraq onlayn formada həyata ke&ccedil;irə bilərsiniz. Bunun
+                                 &uuml;&ccedil;&uuml;n Velocity</span>.az saytında hesabınıza daxil olun,<strong>
+                                 &rdquo;Kuryer sifarişi&rdquo; </strong>b&ouml;lməsinə ke&ccedil;id edərək
+                              <strong>&ldquo;Yeni sifariş&rdquo; </strong>d&uuml;yməsinə klikləyin, a&ccedil;ılan
+                              pəncərədə &ccedil;atdırılmasını istədiyiniz bağlamaları se&ccedil;ib <strong>&rdquo;Şəhər,
+                                 nişangah, &uuml;nvan, telefon, &ccedil;atdırılma tarixi</strong>&rdquo;
+                              b&ouml;lmələrini dolduraraq<strong> &ldquo;Yadda saxla&rdquo;</strong> d&uuml;yməsinə
+                              klikləyin.⁣⁣</span></span></p>
+
+                     <p dir="ltr"><span style="font-family:arial,helvetica,sans-serif"><span
+                              style="font-size:16px"><span style="background-color:transparent">Bağlamalarınızı 24 saat
+                                 ərzində təhvil alacaqsınız. </span>Bağlamaların daşınma haqqını istəyinizə g&ouml;rə
+                              onlayn və ya nağd şəkildə &ouml;dəyə bilərsiniz.</span></span></p>
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="heading123">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse123"
+                     aria-expanded="true" aria-controls="collapse123">
+                     <h6>Bütün bölgələrə poçtla çatdırılma xidməti</h6>
+                     <i class="icon-menu-down_two_tone"></i>
+                  </button>
+               </h2>
+
+               <div id="collapse123" class="accordion-collapse collapse " aria-labelledby="heading123"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     <div class="accordion-body__header">
+                        <h6 class="text-font">Bütün bölgələrə poçtla çatdırılma xidməti</h6>
+                        <i class="icon-menu-up_two_tone"></i>
+                     </div>
+                     <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Onlayn
+                              alış-veriş hər kəsin haqqıdır. Buna g&ouml;rə də Azərbaycanın hansı b&ouml;lgəsində
+                              olmağınızdan asılı olmayaraq bağlamalarınızı sizə &ccedil;atdırırıq. Bildirək ki,
+                              po&ccedil;t &ccedil;atdırılması &uuml;&ccedil;&uuml;n sifariş bağlama Bakı ofisində olan
+                              zaman qəbul edilir.<br />
+                              Bağlamanızın po&ccedil;tla g&ouml;ndərişini sifariş etmək &uuml;&ccedil;&uuml;n, daşınma
+                              haqqı və po&ccedil;t &ouml;dənişi &ouml;ncədən &ouml;dənilməlidir. ( &ldquo;Daşınma
+                              balansı &rdquo; b&ouml;lməsindən artıra bilərsiniz ). Bağlamalar d&ouml;vlət po&ccedil;tu
+                              ilə g&ouml;ndərilir və nəzərinizə &ccedil;atdırırıq ki, po&ccedil;t tariflərini
+                              d&ouml;vlət po&ccedil;tunun &ouml;z&uuml; təyin edir. 1 kq &uuml;&ccedil;&uuml;n
+                              &ouml;dəniş 3 AZN-dir. Balansınızda ən az 5 AZN vəsait olmalıdır. Daşınma haqqı
+                              &ouml;dənilməli m&uuml;ştərinin hər hansı bir borcu olmamalıdır. Biz po&ccedil;tla
+                              &ccedil;atdırılma &uuml;&ccedil;&uuml;n Sizin balansınızdan yalnız d&ouml;vlət
+                              po&ccedil;tunun təyin etdiyini məbləği silirik. Artıq məbləğ balansınızda qalır.
+                              Po&ccedil;tun &ccedil;atdırılma m&uuml;ddəti, rayondan aslı olaraq 1-5 iş g&uuml;n&uuml;
+                              təşkil edir.&nbsp;</span></span><br />
+                        &nbsp;</p>
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="heading124">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse124"
+                     aria-expanded="true" aria-controls="collapse124">
+                     <h6>Ödənişsiz sığortalama xidmətinin qaydaları</h6>
+                     <i class="icon-menu-down_two_tone"></i>
+                  </button>
+               </h2>
+
+               <div id="collapse124" class="accordion-collapse collapse " aria-labelledby="heading124"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     <div class="accordion-body__header">
+                        <h6 class="text-font">Ödənişsiz sığortalama xidmətinin qaydaları</h6>
+                        <i class="icon-menu-up_two_tone"></i>
+                     </div>
+                     <p dir="ltr"><span style="font-family:arial; font-size:11pt">Biz anbarımıza daxil olan
+                           b&uuml;t&uuml;n bağlamaları &ouml;dənişsiz olaraq sığortalayırıq.</span></p>
+
+                     <p dir="ltr"><span style="font-family:arial; font-size:11pt">Həssas məhsullar olan bağlamaların
+                           &ouml;dənişsiz sığortalanma qaydalarını nəzərinizə &ccedil;atdırırıq.</span></p>
+
+                     <p dir="ltr"><span style="font-family:arial; font-size:11pt">Beynəlxalq y&uuml;k daşınma
+                           qaydalarına əsasən qablaşdırılmış, lazımı qoruyucu vasitələrlə əhatə olunmuş (hava
+                           yastıqları, penoplastlarlar olan, fiziki zədə olmayan) və qutu &uuml;zərinə məhsulun daşınma
+                           qaydaları barədə x&uuml;susi işarələr (məsələn, &ldquo;fragile&rdquo;) əlavə olunmuş
+                           b&uuml;t&uuml;n həssas məhsulları &ouml;dənişsiz olaraq sığortalayırıq.</span></p>
+
+                     <div>&nbsp;</div>
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="heading104">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse104"
+                     aria-expanded="true" aria-controls="collapse104">
+                     <h6>Xarici anbarların iş saatları</h6>
+                     <i class="icon-menu-down_two_tone"></i>
+                  </button>
+               </h2>
+
+               <div id="collapse104" class="accordion-collapse collapse " aria-labelledby="heading104"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     <div class="accordion-body__header">
+                        <h6 class="text-font">Xarici anbarların iş saatları</h6>
+                        <i class="icon-menu-up_two_tone"></i>
+                     </div>
+                     <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Xarici
+                              anbarın&nbsp;iş qrafiki aşağıdakı kimidir:</span></span></p>
+
+                     <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">T&uuml;rkiyə
+                              anbarı:<br />
+                              Bazar ertəsi &ndash; C&uuml;mə:&nbsp; &nbsp;&nbsp;&nbsp;9:30 &ndash; 18:30<br />
+                              Şənbə:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                              &nbsp;&nbsp;9:30 &ndash; 16:00<br />
+                              Bazar:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                              &nbsp;Qeyri-iş g&uuml;n&uuml;</span></span></p>
+
+                     <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Amerika
+                              anbarı</span></span></p>
+
+                     <p><span style="font-family:arial,helvetica,sans-serif; font-size:16px">Bazar ertəsi &ndash;
+                           C&uuml;mə:&nbsp; &nbsp;&nbsp;&nbsp;9:00 &ndash; 17:00</span><br />
+                        <span style="font-family:arial,helvetica,sans-serif; font-size:16px">Şənbə:&nbsp; &nbsp; &nbsp;
+                           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Qeyri- iş
+                           g&uuml;n&uuml;&nbsp;&nbsp;</span><br />
+                        <span style="font-family:arial,helvetica,sans-serif; font-size:16px">Bazar:&nbsp; &nbsp; &nbsp;
+                           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Qeyri-iş
+                           g&uuml;n&uuml;</span>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="heading109">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse109"
+                     aria-expanded="true" aria-controls="collapse109">
+                     <h6>Ünvan və iş saatlarımız</h6>
+                     <i class="icon-menu-down_two_tone"></i>
+                  </button>
+               </h2>
+
+               <div id="collapse109" class="accordion-collapse collapse " aria-labelledby="heading109"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     <div class="accordion-body__header">
+                        <h6 class="text-font">Ünvan və iş saatlarımız</h6>
+                        <i class="icon-menu-up_two_tone"></i>
+                     </div>
+                     <h3><strong>İş saatları:</strong><br />
+                        <span style="font-family:arial,helvetica,sans-serif; font-size:16px">Sosial mediada sorğuların
+                           cavablandırılması, Mənim &uuml;&ccedil;&uuml;n Sifariş Et xidməti və kuryer xidməti hər
+                           g&uuml;n fəaliyyət g&ouml;stərəcəkdir.</span>
+                     </h3>
+
+                     <h3><span style="font-family:arial,helvetica,sans-serif"><span
+                              style="font-size:16px"><strong>&Uuml;nvan:</strong> Bakı şəhəri. Nərimanov rayonu, Koroğlu
+                              Rəhimov,&nbsp;AZ 1072</span></span></h3>
+
+                     <p><strong><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Bakı
+                                 ofisi:</span></span></strong></p>
+
+                     <p><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:16px">Bazar ertəsi -
+                              Şənbə:&nbsp;&nbsp; &nbsp; 09:00 - 18:00<br />
+                              Bazar: qeyri iş g&uuml;n&uuml;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                              &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></span></p>
+
+                     <p><strong><span style="font-size:16px">Gəncə ofisi:&nbsp; &nbsp;</span></strong></p>
+
+                     <h3><strong>&Uuml;nvan:</strong><span
+                           style="font-family:arial,helvetica,sans-serif; font-size:16px">&nbsp;</span>Gəncə şəhəri,
+                        Həsən Əliyev pr.75</h3>
+
+                     <p><span style="font-family:arial,helvetica,sans-serif; font-size:16px">Bazar ertəsi - Şənbə:&nbsp;
+                           &nbsp; &nbsp;10</span><span
+                           style="font-family:arial,helvetica,sans-serif; font-size:16px">:00 - 19</span><span
+                           style="font-family:arial,helvetica,sans-serif; font-size:16px">:00</span><br />
+                        <span style="font-family:arial,helvetica,sans-serif; font-size:16px">Bazar: qeyri iş
+                           g&uuml;n&uuml;</span><span
+                           style="font-family:arial,helvetica,sans-serif; font-size:16px">&nbsp; &nbsp; &nbsp; &nbsp;
+                           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span>
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6 ">
+               <div class="heading">
+                  <h2 class="heading__title">Kömək lazımdır?</h2>
+               </div>
+               <ul class="footer__contact">
+                  <li>
+                     <i class="icon-map-marker_two_tone icon-lg"><span class="path1"></span><span
+                           class="path2"></span><span class="path3"></span></i>
+                     <a href="#"><span>Bakı şəh.,AZ1072, Nərimanov rayonu Koroğlu Rəhimov küçəsi Gəncə şəhəri Həsən
+                           Əliyev pr.75</span></a>
+                  </li>
+                  <li>
+                     <i class="icon-email_two_tone icon-lg"><span class="path1"></span><span class="path2"></span><span
+                           class="path3"></span></i>
+                     <a href="cdn-cgi/l/email-protection.html#05256c6b636a457360696a666c717c2b647f"><span><span
+                              class="__cf_email__"
+                              data-cfemail="dbb2b5bdb49badbeb7b4b8b2afa2f5baa1">[email&#160;protected]</span></span></a>
+                  </li>
+                  <li>
+                     <i class="icon-phone_two_tone icon-lg"><span class="path1"></span><span class="path2"></span><span
+                           class="path3"></span></i>
+                     <a href="tel:+994123108707"><span>+994123108707</span></a>
+                  </li>
+               </ul>
+            </div>
+            <div class="col-md-6">
+               <ul class="footer__nav">
+                  <li>
+                     <a href="az/menu/dashinmasina-icaza-yoxdur-97.html">Daşınmasına icazə yoxdur</a>
+                  </li>
+                  <li>
+                     <a href="faq.html">Tez-tez verilən suallar</a>
+                  </li>
+                  <li>
+                     <a href="az/menu/gizlilik-siyasati-106.html">Gizlilik siyasəti</a>
+                  </li>
+                  <li>
+                     <a href="az/menu/istifadachi-razilashmasi-107.html">İstifadəçi razılaşması</a>
+                  </li>
+                  <li>
+                     <a href="az/menu/sifarish-et-qaydalari-108.html">Sifariş et qaydaları</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="social-icons d-md-none">
+               <a href="https://www.facebook.com/Velocityaz-110153937876363" target="_blank"
+                  class="social-icons__link"><i class="icon-facebook"></i></a>
+               <a href="https://www.instagram.com/velocity.az/" target="_blank" class="social-icons__link"><i
+                     class="icon-instagram"></i></a>
+               <a href="https://www.youtube.com/channel/UCx2nxoyQHRVqGR4Zefyp6Zg" target="_blank"
+                  class="social-icons__link"><i class="icon-youtube"></i></a>
+            </div>
+         </div>
+         <div class="footer-bottom">
+            <div>
+               <img src="front/img/logo/logo-white.svg" alt="">
+               <p class="copyright">© 2021 Velocity LTD. Bütün hüquqlar qorunur</p>
+            </div>
+            <div class="social-icons d-none d-md-block">
+               <a href="https://www.facebook.com/Velocityaz-110153937876363" target="_blank"
+                  class="social-icons__link"><i class="icon-facebook"></i></a>
+               <a href="https://www.instagram.com/velocity.az/" target="_blank" class="social-icons__link"><i
+                     class="icon-instagram"></i></a>
+               <a href="https://www.youtube.com/channel/UCx2nxoyQHRVqGR4Zefyp6Zg" target="_blank"
+                  class="social-icons__link"><i class="icon-youtube"></i></a>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script src="js/swiper-bundle.min.js"></script>
+   <script src="front/plugins/owl-carousel/js/owl.carousel.min.js"></script>
+   <script src="js/select2.min.js"></script>
+   <script src="front/plugins/nice-select/js/jquery.nice-select.min.js"></script>
+   <script src="front/plugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/count-up.js"></script>
+   <script src="js/frontfd0f.js?v=6.91"></script>
+   <script src="js/maind417.js?v=20.1"></script>
+   <script src="assets/dcf7a251/yii.js"></script>
+   <script src="assets/dcf7a251/yii.validation.js"></script>
+   <script src="assets/dcf7a251/yii.activeForm.js"></script>
+</body>
+
+</html>

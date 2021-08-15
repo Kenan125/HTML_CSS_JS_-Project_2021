@@ -1,0 +1,203 @@
+
+/******* SIDEBAR ******/
+
+.sidebar {
+    padding: 40px 16px;
+    width: 280px;
+    min-width: 280px;
+    margin-right: 32px;
+    height: -moz-fit-content;
+    @include large {
+       margin-right: 16px;
+    }
+    
+    &__buttons {
+       margin-bottom: 48px;
+ 
+       & > :not(:last-child) {
+          margin-bottom: 16px;
+       }
+ 
+       .btn {
+          width: auto;
+          height: 48px;
+       }
+    }
+ 
+    &__unordered {
+       padding-bottom: 24px;
+       border-bottom: 1px solid $white-pale;
+ 
+       &-bottom {
+          padding-top: 24px
+       }
+    }
+ 
+    &__list {
+       @include flex;
+       border-radius: $border-radius;
+ 
+       &:hover {
+          :is(.sidebar__list-link, i) {
+             color: $brand-color-light;
+             @include transition(.1s);
+          }
+ 
+          svg>path {
+             fill: $brand-color-light;
+          }
+ 
+          i {
+             border-color: $brand-color-light;
+          }
+       }
+ 
+       &.active {
+          background-color: $black-dark-mode;
+ 
+          svg>path {
+             fill: $brand-color-light;
+          }
+ 
+          i {
+             border: 0;
+             color: $brand-color-light !important;  
+          }
+          .sidebar__list-link {
+             color: $brand-color-light !important;  
+          }
+       }
+       
+       &:not(:last-child) {
+          margin-bottom: 8px;
+       }
+ 
+       &-link {
+          @include flex;
+          align-items: center;
+          width: 100%;
+          margin-left: 16px;
+          @include transition(.1s);
+ 
+          &:focus {
+             color: $brand-color-light;
+          }
+       }
+ 
+       i {
+          padding: 11px;
+          border: 1px solid $white-pale;
+          border-radius: $border-radius;
+          display: inline-block;
+          @include transition;
+       }
+    }
+ 
+    &__user {
+       @include flex;
+       align-items: center;
+       padding-top: 24px;
+       width: 100% ;
+       cursor: pointer;
+       position: relative;
+ 
+       .user-info {
+          @include flex;
+          align-items: center;
+          justify-content: space-between;
+          flex: 1 ;
+          margin-left: 16px;
+ 
+          .user-name {
+             color: $white;
+             font-weight: $fw-bold;
+          }
+    
+          .user-id {
+             font-size: 12px;
+             line-height: 16px;
+          }
+ 
+          i {
+             color: $white-pale;
+          }
+       }
+ 
+       &-options {
+          position: absolute;
+          bottom: 90%;
+          width: 100%;
+          padding: 12px 0 !important;
+          background-color: $black-dark-mode;
+          border-radius: $border-radius;
+          display: none;
+ 
+          a {
+             display: block;
+             padding: 16px;
+             @include transition;
+ 
+             &:hover {
+                background-color:rgba($white, .05);
+                color: $brand-color-light;
+                @include transition;
+             }
+          }
+       }
+    }
+ }
+ 
+ .dashboard-compact {
+    @include xsmall {
+       margin: 0 16px;
+    }
+    .sidebar__user {
+       padding: 16px;
+       margin-bottom: 16px;
+       z-index: -1;
+    }
+ }
+ 
+ //Account image in desktop size
+ .user-image-dsk {
+    @include flex;
+    position: relative;
+    cursor: pointer;
+ 
+    .user-image {
+       background-color: #dfdfdf;
+       border-radius: $border-radius;
+       width: 48px;
+       height: 48px;
+       overflow: hidden;
+       margin-right: 4px;
+    }
+ 
+    .sidebar {
+       display: none;
+       position: absolute;
+       right: 0;
+       margin-right: 0;
+       top: calc(100% + 4px);
+       z-index: 445;
+    }
+ }
+ 
+ //Account image in mobile devices
+ .user-image-mbl {
+    @include flex;
+ 
+    .user-image {
+       width: 32px;
+       height: 32px;
+       overflow: hidden;
+       background-color: #dfdfdf;
+       border-radius: $border-radius;
+    }
+ 
+    i {
+       font-size: 16px;
+       color: $white;
+       margin-left: 4px;
+    }
+ }

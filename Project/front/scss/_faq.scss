@@ -1,0 +1,78 @@
+.faq {
+    .accordion-item {
+       margin-bottom: 8px;
+   }
+ 
+    .accordion-button {
+       padding: 20px 24px;
+       background-color: $black-dark-mode-v2;
+       color: $white;
+       border-radius: $border-radius !important;
+       @include flex;
+       justify-content: space-between;
+ 
+       &:focus {
+          border: none;
+       }
+ 
+       &::after {
+          display: none;
+       }
+       &::before {
+          @extend .accordion-button::after;
+       }
+    }
+ 
+    .accordion-body {
+       border-radius: $border-radius;
+       background-color: $black-dark-mode-v2;
+       padding: 20px 24px;
+       outline-color: $white;
+       position: relative;
+       padding: 20px 24px 58px;
+       line-height: 26px;
+       margin-top: 8px   ;
+       background-color: $black-dark-mode-v2;
+       border-radius: $border-radius;
+       border: 1px solid $brand-color-light;
+       @include small  {
+          padding: 20px 16px 32px;
+          line-height: 28px;
+          padding-left: 24px 20px;
+       }
+ 
+       &__header {
+          @include flex;
+          justify-content: space-between;
+       }
+       h6 {
+          color: $brand-color-light;
+          margin-bottom: 44px;
+          @include small {
+             font-size: 16px !important;
+             line-height: 24px !important;
+          }
+       }
+ 
+       p {
+          @include small {
+             font-size: 16px !important;
+             line-height: 28px !important;
+          }
+       }
+ 
+       ol {
+          margin-bottom: 20px;
+          margin-top: 20px;
+       }
+    }
+ }
+ 
+ // Disable summary tag default arrow for Chrome
+ summary::marker {
+    display: none;
+ }
+ // Disable summary tag default arrow for Firefox
+ details > summary:first-of-type {
+    list-style-type: none;
+ }

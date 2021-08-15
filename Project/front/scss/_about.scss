@@ -1,0 +1,80 @@
+.about {
+    .header {
+       margin-bottom: 64px;
+       @include medium {
+          margin-bottom: 0;
+       }
+    }
+    .info {
+       .sm-section-pdng {
+          @include medium {
+             border-radius: 0;
+          }
+       }
+    
+       &__content {
+          background: url(../img/vector/Vector-about.svg) -130px no-repeat;
+          // background-position: -130px;
+          padding: 48px 48px 84px;
+          position: relative; //position the content block on top of the image. 
+          @include small {
+             padding: 36px 36px 63px;
+             background-position: -275px;
+          }
+    
+          .heading {
+             @include medium {
+                margin-bottom: 0 !important;
+             }
+ 
+             &__title {
+                margin-bottom: 32px;
+             }
+          }
+          &-text {
+            
+             margin: 32px 0 0;
+            
+             @include xsmall {
+                line-height: 28px;
+                font-size: 16px;
+             }
+          }
+       }
+    
+       &__image {
+          margin-left: auto;
+          margin-top: -256px;
+          @include large {
+             margin-top: -156px;
+          }
+          @include medium {
+             margin-top: 0;
+          }
+    
+          img {
+             border-radius: $border-radius;
+             @include medium {
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+             }
+          }
+       }
+    }
+ 
+    h4 {
+       font-weight: $fw-bold;
+       font-size: 28px;
+       color: $white;
+    }
+ 
+   
+    .box {
+       &-title {
+          margin-bottom: 16px !important;
+          @include xsmall {
+             margin-bottom: 8px !important;
+          }
+       }
+    }
+ }

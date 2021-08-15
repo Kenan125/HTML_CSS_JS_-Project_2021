@@ -1,0 +1,272 @@
+
+.toggler-btn {
+    .bar{
+      width: 18px;
+      height: 2px;
+      margin: 3px 0;
+      background-color: $white;
+      @include transition(.5s);/*open duration when click the navbar*/   
+    }
+  }
+ 
+  /* PRIMARY BUTTON */
+ .btn--primary{
+    @include main-btn;
+    background-color: $brand-color-light;
+    color: $black;
+    @include small {
+       width: 100%;
+    }
+ 
+    &:hover {
+       background-color: rgba($brand-color-light, .8);
+       color: $black;
+    }   
+ }
+ 
+ /* SECONDARY BUTTON*/
+ .btn--secondary {
+    @include main-btn;
+    background-color: transparent;
+    color: $brand-color-light;
+    border-color: $line-color;
+    @include small {
+       width: 100%;
+    }
+ 
+    &:hover {
+       border-color: $brand-color-light;
+       background-color: rgba($white, .2);
+       color: $brand-color-light;
+    }
+ }
+ 
+ /* SUCCESS BUTTON */
+ .btn--success {
+    color: $pure-green;
+    background-color: transparent;
+    min-width: 144px;
+    cursor: text;
+    @include small {
+       width: 100%;
+    }
+    &:hover {
+       color: $brand-color-light;
+       background-color: transparent;
+    }
+    &:focus {
+       @extend .btn--success:hover;
+    }
+ }
+ 
+ /* DISABLED BUTTON */
+ 
+ .btn--disabled {
+    @include main-btn;
+    background-color: rgba($white, .1);
+    color: rgba($white, .4);
+ }
+ 
+ .btn--video {
+    @include flex;
+    align-items: center;
+    color: $white;
+    &:hover {
+       color: $brand-color-light !important;
+    }
+    &:focus {
+       @extend .btn--video:hover;
+    }
+ }
+ 
+ /* ICON BUTTON */
+ .btn--icon {
+    padding: 0;
+    border: 0;
+    line-height: 24px;
+ 
+    &:not(:last-of-type) {
+       margin-right: 24px;
+       @include small {
+          margin-right: 8px;
+       }
+    }
+    //change info icon color on hover
+    i {
+       &:hover {
+          color: $brand-color-light;
+       }
+    }
+    &:focus {
+       i {
+          color: $brand-color-light;
+       }
+    }
+ 
+    //change warning icon color on hover
+    i.warning {
+       &:hover {
+          color: $warning;
+       }
+       &:focus {
+          @extend i.warning:hover;
+       }
+    }
+ }
+ 
+ /* TAB BUTTONS*/
+ .tabs {
+    @include flex;
+    align-items: center;
+ 
+    .btn--tab {
+       @include flex-center;
+       border-radius: 8px;
+       border: 1px solid $line-color;
+       padding: 12px 15px;
+       min-width: 104px;
+       @include xsmall {
+          min-width: auto;
+          padding: 12px;
+       }
+ 
+       &:not(:first-child) {
+          margin-left: 8px;
+          @include xsmall {
+             margin-left: 16px;
+          }
+       }
+    
+       span {
+          margin-left: 8px;
+          color: $white;
+          font-weight: $fw-medium;
+          @include xsmall {
+             display: none;
+          }
+       }
+    }
+ }
+ 
+ /* COUNTRY TAB ON PAGES */
+ .tabs--pages {
+    margin-bottom: 40px;
+    @include small {
+       justify-content: center;
+       margin-bottom: 24px;
+    }
+ 
+    .is-tab-active {
+       background-color: $black-dark-mode-v2;
+    }
+ }
+ 
+ .btn--tab-pages {
+    padding: 15px 27px !important;
+    color: $white;
+    border-radius: $border-radius;
+    min-width: 152px !important;
+    @include small {
+       min-width: auto !important;
+    }
+ 
+    &.active {
+       background-color: $black-dark-mode-v2;
+       color: $brand-color-light;
+    }
+ 
+    &:hover {
+       color: $brand-color-light;
+    }
+    &:focus {
+       @extend .btn--tab-pages:hover;
+    }
+ }
+ 
+ /* ADJACENT TABS */
+ .tabs-adjacent {
+    border: 1px solid $line-color;
+    border-radius: $border-radius;
+    @include flex;
+    @include small {
+       border: 0;
+    }
+    @include small {
+       overflow-x: auto;
+    }
+ 
+    .btn:not(:first-child) {
+       @include small {
+          margin-left: 16px !important;
+       }
+    }
+ 
+    .btn--adjacent-tab {
+       padding: 15px 68px;
+       color: $white;
+       flex: 1 1 auto;
+       white-space: nowrap;
+ 
+       @include xlarge {
+          padding-left: 48px;
+          padding-right: 48px;
+       }
+       @include large {
+          padding-left: 28px;
+          padding-right: 28px;
+       }
+       @include small {
+          border: 1px solid $line-color;
+          border-radius: $border-radius;
+       }
+       @include xsmall {
+          padding: 15px 11px;
+       }
+ 
+       &:last-of-type {
+          padding-left: 33px;
+          padding-right: 33px;
+          // margin: 0;
+          @include large {
+             padding-left: 20px;
+             padding-right: 20px;
+          }
+          @include xsmall {
+             padding: 15px 11px;
+          }
+       }
+ 
+       span {
+          line-height: 24px;
+          font-weight: $fw-medium;
+       }
+    }
+ }
+ 
+ /* SIDE MENU BUTTONS */
+ .btn--side-menu {
+    font-weight: $fw-medium;
+    font-size: 16px;
+    line-height: 24px;
+    color: $white;
+    padding: 15px 11px;
+    border-radius: $border-radius;
+    border: 1px solid $white-pale;
+ 
+    &:not(:last-child) {
+       margin-right: 8px;
+    }
+ 
+    > span {
+       color: $white-pale;
+    }
+ 
+    &:hover {
+       background-color: $black-dark-mode-v2;
+       color: $brand-color-light;
+       border: 1px solid transparent;
+    }
+    &:focus {
+       @extend .btn--side-menu:hover;
+    }
+ }

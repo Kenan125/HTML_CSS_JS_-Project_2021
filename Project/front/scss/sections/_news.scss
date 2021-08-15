@@ -1,0 +1,80 @@
+.news {
+    padding: 64px;
+    background: url(../img/vector/Vector-news.svg) left no-repeat;
+    @include medium {
+       padding: 48px;
+    }
+    @include xsmall {
+       background: none;
+       padding: 0;
+    }
+ 
+    .heading {
+       margin-bottom: 96px;
+       @include xsmall {
+          padding: 32px 16px 0;
+       }
+    }
+ 
+    &__inner {
+       @include flex;
+       @include medium {
+          flex-direction: column;
+       }
+ 
+       > div:last-child {
+          @include xsmall {
+             padding: 0 16px 40px;
+          }
+       }
+ 
+       &-left {
+          max-width: 360px;
+          width: 360px;
+          @include xsmall {
+             width: auto;
+          }
+ 
+          .btn {
+             display: inline-flex !important;
+             @include medium {
+                display: none !important;
+             }
+          }
+       }
+ 
+       .btn--secondary {
+          min-width: 200px;
+          @include medium {
+             margin: 40px auto 0;
+          }
+          @include small {
+             width: 100%;
+          }
+       }
+    }
+ 
+    &__cards {
+       flex: 1 1 auto;
+       margin-left: 40px;
+ 
+       @include medium {
+          margin-left: 0;
+          @include flex;
+          gap: 24px;
+          overflow-x: auto;
+          scroll-snap-type: x mandatory;
+          -webkit-overflow-scrolling: touch; /* Important for iOS devices */
+       }
+       @include small {
+          gap: 16px;
+       }
+       @include xsmall {
+          gap: 8px;
+       }
+ 
+       .v-card {
+          scroll-snap-align: center;
+       }
+    }
+ }

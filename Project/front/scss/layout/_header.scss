@@ -1,0 +1,203 @@
+select option[disabled] {
+   display: none;
+}
+
+.header {
+   &__top {
+      height: 56px;
+      background-color: $black-dark-mode-v2;
+
+      @include small {
+         display: none;
+      }
+
+      i {
+         font-size: 24px;
+      }
+
+      &-inner {
+         @include flex;
+         justify-content: space-between;
+         align-items: center;
+
+         span {
+            color: $hdr-top-text-clr;
+            @include transition;
+         }
+      }
+
+      &-link {
+         font-size: 14px;
+
+         &:hover {
+            span {
+               color: $white;
+            }
+         }
+
+         &:focus {
+            @extend .header__top-link:hover;
+         }
+
+         &:not(:last-child) {
+            margin-right: 30px;
+         }
+      }
+
+      &-right {
+         @include flex;
+         align-items: center;
+
+         a {
+            @include flex;
+
+            &:hover {
+               :is(i, span) {
+                  color: $brand-color-light;
+               }
+            }
+
+            &:focus {
+               :is(i, span) {
+                  color: $brand-color-light;
+               }
+            }
+         }
+
+         .select-lang {
+            margin-left: 20px;
+
+            .nice-select {
+               padding: 16px 40px 16px 16px;
+               border-bottom-left-radius: 0;
+               border-bottom-right-radius: 0;
+               width: 88px;
+
+               &::after {
+                  border: none;
+                  border-bottom: 2px solid $white-pale !important;
+                  border-right: 2px solid $white-pale !important;
+                  height: 10px !important;
+                  width: 10px !important;
+                  margin-top: -2px;
+                  margin-right: 16px;
+                  @include transform(translateY(-50%) rotate(45deg));
+               }
+
+               .list {
+                  margin-top: -4px;
+                  border-top-left-radius: 0;
+                  border-top-right-radius: 0;
+               }
+
+               .option {
+                  padding: 8px 16px;
+               }
+
+               &:focus {
+                  background-color: $black-dark-mode;
+               }
+            }
+         }
+
+         i {
+            color: $hdr-top-text-clr;
+         }
+      }
+   }
+
+   &__bottom {
+      @include flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 24px;
+      position: relative;
+
+      @include small {
+         margin-top: 0;
+         padding: 16px;
+         height: 64px;
+      }
+
+      .navbar {
+         position: static;
+         padding: 2px 0;
+      }
+
+      .logo {
+         @include medium {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @include transform(translate(-50%, -50%));
+            height: auto;
+         }
+      }
+   }
+
+   &__icon {
+      @include flex;
+      align-items: center;
+      position: relative;
+
+      &:not(:first-child) {
+         margin-left: 32px;
+         margin-right: 20px;
+      }
+
+      &:hover {
+         color: $brand-color-light;
+      }
+
+      &:focus {
+         @extend .header__icon:hover;
+      }
+
+      i {
+         font-size: 24px;
+      }
+
+      >span {
+         margin-left: 8px;
+
+         &.cart-count {
+            position: absolute;
+            top: -19px;
+            right: -15px;
+            margin-left: 0;
+            // @include transform(translate(70%, -70%));
+            font-family: 'Poppins', sans-serif;
+            font-weight: $fw-medium;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            width: 100%;
+            background-color: $red;
+            border-radius: 50%;
+            padding: 4px;
+         }
+      }
+   }
+}
+
+.header-pages {
+   margin-bottom: 64px;
+
+   @include small {
+      margin-bottom: 24px;
+   }
+
+   .user-image {
+      margin-right: 0;
+
+      &+i {
+         align-self: center;
+         color: $white-pale;
+      }
+   }
+
+   .header__icon>span.cart-count {
+      top: -5px;
+      right: -15px;
+   }
+}

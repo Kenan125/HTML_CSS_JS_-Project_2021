@@ -1,0 +1,205 @@
+.tariffs {
+    padding: 48px 48px 88px;
+ 
+    .heading {
+       margin-bottom: 72px;
+       @include small {
+          margin-bottom: 40px;
+       }
+       @include xsmall {
+          flex-direction: column;
+          align-items: flex-start;
+       }
+ 
+       &__title {
+          margin-bottom: 16px;
+       }
+    }
+ 
+    .tabs {
+       .btn--tab {
+          @include small {
+             min-width: auto;
+          }
+       }
+       span {
+          @include small {
+             display: none;
+             width: auto
+          }
+       }
+    }
+ 
+    .tariff {
+       @include flex;
+       align-items: center;
+       justify-content: space-between;
+       padding: 31px 55px 31px 31px;
+       border: 1px solid $white-pale;
+       border-radius: $border-radius;
+       background-color: $black-dark-mode-v2;
+       @include medium {
+          padding: 24px;
+       }
+       @include small {
+          flex-direction: column;
+          align-items: start;
+       }
+       @include xsmall {
+          padding: 16px 16px 24px;
+       }
+ 
+       &:hover {
+          border-color: $brand-color-light;
+ 
+          i {
+             color: $brand-color-light;
+          }
+       }
+ 
+       &:not(:last-child) {
+          margin-bottom: 8px;
+       }
+ 
+       .icon-bg {
+          border: none !important;
+       }
+ 
+       &-head {
+          @include flex;
+          align-items: center;
+          @include xsmall {
+             flex-direction: column;
+             align-items: start;
+             margin-bottom: 24px;
+          }
+ 
+          &__tail {
+             @include flex;
+             @include medium {
+                display: block;
+                // flex-direction: column;
+             }
+          }
+       }
+ 
+       &-title {
+          line-height: 28px;
+          margin-left: 32px;
+          margin-right: 14px;
+          font-weight: $fw-semibold  ;
+          color: $white;
+          @include medium {
+             font-size: 18px;
+             margin-left: 16px;
+             margin-right: 0;
+          }
+          @include xsmall {
+             font-size: 16px;
+             line-height: 24px;
+             margin-left: 0;
+             margin-top: 8px;
+          }
+       }
+ 
+       &-tail {
+          font-size: 14px;
+          line-height: 24px !important;
+          align-self: flex-end;
+          @include medium {
+             margin-left: 16px;
+          }
+          @include xsmall {
+             margin-left: 0;
+          }
+       }
+ 
+       &-category {
+          @include flex;
+          @include small {
+             justify-content: space-between;
+             width: 100%;
+             margin-top: 8px;
+          }
+       }
+ 
+       &-price {
+          &:not(:first-child) {
+             margin-left: 160px;
+             @include large {
+                margin-left: 80px;
+             }
+             @include medium {
+                margin-left: 35px;
+             }
+             @include small {
+                margin-left: 0;
+             }
+          }
+ 
+          .class {
+             font-weight: $fw-medium;
+             font-size: 14px;
+             color: $brand-color-light;
+             line-height: 24px;
+          }
+ 
+          .amount {
+             font-weight: $fw-bold;
+             line-height: 24px;
+             color: $white;
+          }
+ 
+          .amount-old {
+             font-size: 14px;
+             line-height: 24px;
+          }
+       }
+    }
+ }
+ 
+ body.tariffs-page {
+    .calculator {
+       padding: 48px;
+ 
+       .tabs {
+          @include large{
+             margin-bottom: 48px;
+          }
+       }
+    }
+ 
+    .btn--adjacent-tab {
+       padding: 15px 30px;
+ 
+       @include xlarge {
+          padding-left: 48px;
+          padding-right: 48px;
+       }
+       @include large {
+          padding-left: 28px;
+          padding-right: 28px;
+       }
+       @include xsmall {
+          padding: 15px 11px;
+       }
+ 
+       &:last-of-type {
+          padding-left: 20px;
+          padding-right: 20px;
+          @include large {
+             padding-left: 20px;
+             padding-right: 20px;
+          }
+          @include xsmall {
+             padding: 15px 11px;
+          }
+       }
+    }
+ 
+    .tariff:hover i {
+       background-color: $black-dark-mode;
+       box-shadow: $shadow;
+       border-radius: $border-radius;
+    }
+ }

@@ -1,0 +1,39 @@
+.work {
+    .heading {
+       margin-bottom: 40px;
+       @include small {
+          margin-bottom: 16px !important;
+       }
+    }
+ 
+    &__content {
+       @include flex;
+       gap: 24px;
+       overflow-x: auto;
+       scroll-snap-type: x mandatory;
+       -webkit-overflow-scrolling: touch; /* Important for iOS devices */
+       @include small {
+          gap: 16px;
+       }
+       @include xsmall {
+          gap: 8px;
+       }
+ 
+       .box {
+          @include small {
+             width: 280px;
+             max-width: 280px;
+          }
+ 
+          .btn {
+             @include inline-flex;
+             width: 200px;
+          }
+       }
+ 
+       .stretch-col {
+          scroll-snap-align: center;
+          scroll-snap-stop: always; //prevent the user from accidentally bypassing some important items while scrolling
+       }
+    }
+ }

@@ -1,0 +1,205 @@
+.shops {
+    // padding-bottom: 56px;
+    .heading {
+       margin-bottom: 56px;
+       @include small {
+          margin-bottom: 8px !important;
+       }
+    }
+ 
+    .owl-item {
+       width: 200px !important;
+    }
+ 
+    .swiper-container {
+       @include small {
+          margin-bottom: 24px;
+       }
+    }
+ 
+    .swiper-slide {
+       width: 200px !important;
+       @include small {
+          width: 180px !important;
+          // margin-right: 16px !important;
+       }
+    }
+    
+    .shop-img {
+       width: 200px !important;
+       height: 200px !important;
+       background-color: $white;
+       border-radius: $border-radius;
+       border: 1px solid $black;
+       @include flex;
+       align-items: center;
+       justify-content: center;
+       @include small {
+          width: 180px !important;
+          height: 180px !important;
+       }
+ 
+       img {
+          height: 170px;
+          width: 170px;
+          @include small {
+             height: 110px;
+             width: 110px;
+          }
+ 
+          &:hover {
+             @include filter(grayscale(50%) opacity(80%));
+          }
+       }
+    }
+ 
+    .btn {
+       min-width: 200px;
+       @include small {
+          margin: auto;
+       }
+       @include xsmall {
+          width: 100%;
+       }
+    }
+ }
+ 
+ .shops-page {
+    @include medium {
+       padding: 0 16px;
+    }
+    
+    .shops {
+       @include medium {
+          flex-direction: column;
+       }
+    }
+ 
+    .tabs {
+       overflow-x: auto;
+       
+       .btn--tab {
+          @include small {
+             width: auto;
+          }
+       }
+    }
+ 
+    aside.shop-side {
+       width: 370px;
+       max-width: 370px;
+       padding: 32px 16px 40px;
+       margin-right: 48px;
+       height: fit-content;
+       height: -moz-fit-content;
+       @include large {
+          margin-right: 32px;
+          width: auto;
+       }
+    
+       h2 {
+          color: $brand-color-light;
+          font-weight: $fw-semibold;
+          font-size: 28px;
+          line-height: 40px;
+          margin-bottom: 24px;
+          padding-left: 16px;
+          padding-right: 16px;
+       }
+    
+       .sidebar__list {
+          padding: 12px 16px;
+          
+          i {
+             padding: 0;
+             border:0;
+             border-radius:none;
+          }
+    
+          &:hover {
+             background-color: rgba($color: $brand-color-light, $alpha: .1);
+             border-radius: 4px !important;
+          }
+       }
+    }
+ 
+    .menu-compact {
+       @include flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 6px 16px 10px;
+       margin-bottom: 40px;
+ 
+       p {
+          font-size: 12px;
+          line-height: 16px;
+       }
+ 
+       h6 {
+          font-weight: $fw-medium;
+          font-size: 16px;
+          line-height: 24px;
+          color: $white;
+       }
+    }
+ 
+    .brands {
+       width: calc(100% - 370px);
+       @include medium {
+          width: 100%;
+       }
+ 
+       .row {
+          .col-xl-3 {
+             padding: 0 8px;
+          }
+       }
+ 
+       &-row {
+          @include inline-flex;
+          gap: 14px;
+          flex-wrap: wrap;
+          @include medium {
+             gap: 16px;
+             justify-content: center;
+          }
+ 
+          &:not(:last-child) {
+             margin-bottom: 16px;
+          }
+       }
+       .shop-img {
+          width: auto !important;
+          height: auto !important;
+          @include medium {
+             border: 0;
+          }
+       }
+       img {
+          width: 176px;
+          height: 176px;
+          @include medium{
+             height: 136px;
+             width: 136px;
+          }
+          
+          &:hover {
+             @include filter(grayscale(50%) opacity(60%));
+          }
+       }
+    }
+ }
+ 
+ .side-dashboard {
+    .shop-side {
+       padding: 40px 16px;
+ 
+       h2 {
+          color: $brand-color-light;
+       }
+ 
+       ul > :first-child {
+          padding: 12px 16px;
+       }
+    }
+ }

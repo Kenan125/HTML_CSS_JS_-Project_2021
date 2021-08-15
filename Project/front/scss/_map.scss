@@ -1,0 +1,50 @@
+#map {
+    height: 560px;
+    border-radius: 8px;
+    @include small {
+       border-bottom-right-radius: 0;
+       border-bottom-left-radius: 0;
+    }
+ }
+ 
+ /* Map marker content */
+ .gm-style .gm-style-iw-c {
+    padding: 16px 24px !important;
+    background-color: $black-dark-mode;
+    width: 388px;
+    @include small {
+       padding-left: 16px !important;
+       padding-right: 16px !important;
+       max-width: 288px !important;
+       // width: 288px;
+    }
+ }
+ 
+ .gm-style .gm-style-iw-d {
+    overflow: hidden !important;
+ }
+ 
+ .gm-style .gm-style-iw-d h5 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    color: $white;
+    @include small {
+       font-size: 16px;
+       line-height: 24px;
+    }
+ }
+ 
+ .gm-style .gm-style-iw-d p {
+    font-size: 18px;
+    line-height: 28px;
+    @include small {
+       font-size: 14px;
+       line-height: 24px;
+    }
+ }
+ 
+ /* Map marker content arrow  */
+ .gm-style .gm-style-iw-t::after {
+    display: none;
+ }
