@@ -132,7 +132,7 @@ if ($("#map").length) {
             o = document.getElementById("map"),
             t = new google.maps.Map(o, e),
             n = {
-                url: "/front/img/map-marker.svg",
+                url: "/assets/img/map-marker.svg",
                 origin: new google.maps.Point(0, 0)
             };
         const contentString =

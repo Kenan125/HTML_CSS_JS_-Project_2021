@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile:sass": "node-sass ./front/scss/style.scss ./front/css/style.css -w"
+    "compile:sass": "node-sass ./assets/scss/style.scss ./assets/css/style.css -w"
     
   },
   "author": "",
